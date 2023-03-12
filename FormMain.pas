@@ -16,8 +16,7 @@ type
     btnExit: TButton;
     procedure btnExitClick(Sender: TObject);
     procedure FormCloseQuery(Sender: TObject; var CanClose: Boolean);
-    procedure FormKeyUp(Sender: TObject; var Key: Word; var KeyChar: Char;
-      Shift: TShiftState);
+    procedure FormKeyUp(Sender: TObject; var Key: Word; var KeyChar: Char; Shift: TShiftState);
 
   private
     { Private declarations }
@@ -32,31 +31,28 @@ implementation
 
 {$R *.fmx}
 
-uses FormTimerClose;
+uses FormTimerClose; // Instanciar con la "FormTimerClose" 
 
 procedure TfrmMain.btnExitClick(Sender: TObject);
 begin
-  close;
+  close; // Activara el evento "FormCloseQuery"
 end;
 
 procedure TfrmMain.FormCloseQuery(Sender: TObject; var CanClose: Boolean);
 begin
-{$IFDEF WINDOWS}
+  {$IFDEF WINDOWS}
   frmOnTimerClose.ShowModal; // Muestra el "FromTimerClose" (Para WINDOWS).
-  CanClose := (frmOnTimerClose.ModalResult = mrClose);
-  // Recibe la respuesta del "FromTimerClose".
-{$ELSE IF(ANDROID)}
+  CanClose := (frmOnTimerClose.ModalResult = mrClose); // Recibe la respuesta del "FromTimerClose".
+  {$ELSE IF(ANDROID)}
   frmOnTimerClose.Show; // Muestra el "FromTimerClose" (Para ANDROID).
-  CanClose := (frmOnTimerClose.ModalResult = mrClose);
-  // Recibe la respuesta del "FromTimerClose".
+  CanClose := (frmOnTimerClose.ModalResult = mrClose); // Recibe la respuesta del "FromTimerClose".
 {$ENDIF}
 end;
 
-procedure TfrmMain.FormKeyUp(Sender: TObject; var Key: Word; var KeyChar: Char;
-  Shift: TShiftState);
+procedure TfrmMain.FormKeyUp(Sender: TObject; var Key: Word; var KeyChar: Char; Shift: TShiftState);
 begin
   if Key = vkHardwareBack then
-    close;
+    close; // Activara el evento "FormCloseQuery"
 end;
 
 end.
