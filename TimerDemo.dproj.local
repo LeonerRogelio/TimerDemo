@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2023/03/10 14:01:56.000.465,=C:\Users\leone\OneDrive\Documentos\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2023/03/10 14:03:02.000.924,C:\Users\leone\OneDrive\Documentos\Embarcadero\Studio\Projects\Unit1.fmx=C:\Users\leone\OneDrive\Documentos\Embarcadero\Studio\Projects\Temporizador\FormMain.fmx</Transaction>
+    <Transaction>2023/03/10 14:03:02.000.924,C:\Users\leone\OneDrive\Documentos\Embarcadero\Studio\Projects\Unit1.pas=C:\Users\leone\OneDrive\Documentos\Embarcadero\Studio\Projects\Temporizador\FormMain.pas</Transaction>
+    <Transaction>2023/03/10 14:03:21.000.920,C:\Users\leone\OneDrive\Documentos\Embarcadero\Studio\Projects\Project1.dproj=C:\Users\leone\OneDrive\Documentos\Embarcadero\Studio\Projects\Temporizador\TimerDemo.dproj</Transaction>
+    <Transaction>2023/03/10 15:14:46.000.536,=C:\Users\leone\OneDrive\Documentos\Embarcadero\Studio\Projects\Temporizador\Unit1.pas</Transaction>
+    <Transaction>2023/03/10 15:18:46.000.043,C:\Users\leone\OneDrive\Documentos\Embarcadero\Studio\Projects\Temporizador\Unit1.pas=C:\Users\leone\OneDrive\Documentos\Embarcadero\Studio\Projects\Temporizador\FormTimerClose.pas</Transaction>
+    <Transaction>2023/03/10 15:18:46.000.043,C:\Users\leone\OneDrive\Documentos\Embarcadero\Studio\Projects\Temporizador\Unit1.fmx=C:\Users\leone\OneDrive\Documentos\Embarcadero\Studio\Projects\Temporizador\FormTimerClose.fmx</Transaction>
+  </Transactions>
+	<ActiveMobileDevice>
+		<NoProfile Android64=""/>
+	</ActiveMobileDevice>
+</BorlandProject>

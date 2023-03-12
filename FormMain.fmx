@@ -1,0 +1,49 @@
+object frmMain: TfrmMain
+  Left = 0
+  Top = 0
+  Caption = 'Nnnna'
+  ClientHeight = 305
+  ClientWidth = 262
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnCloseQuery = FormCloseQuery
+  OnKeyUp = FormKeyUp
+  DesignerMasterStyle = 0
+  object tlbHeader: TToolBar
+    Size.Width = 262.000000000000000000
+    Size.Height = 40.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+    object lblInfo: TLabel
+      Align = Left
+      Size.Width = 210.000000000000000000
+      Size.Height = 40.000000000000000000
+      Size.PlatformDefault = False
+      Text = '     Close with timer demo'
+      TabOrder = 0
+    end
+    object btnExit: TButton
+      Align = MostRight
+      Position.X = 184.000000000000000000
+      Size.Width = 78.000000000000000000
+      Size.Height = 40.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = 'cleareditbutton'
+      TabOrder = 1
+      Text = 'btnExit'
+      OnClick = btnExitClick
+    end
+  end
+  object memLog: TMemo
+    Touch.InteractiveGestures = [Pan, LongTap, DoubleTap]
+    DataDetectorTypes = []
+    Align = Client
+    Size.Width = 262.000000000000000000
+    Size.Height = 265.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 1
+    Viewport.Width = 258.000000000000000000
+    Viewport.Height = 261.000000000000000000
+  end
+end

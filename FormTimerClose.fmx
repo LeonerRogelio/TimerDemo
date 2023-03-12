@@ -1,0 +1,49 @@
+object frmOnTimerClose: TfrmOnTimerClose
+  Left = 0
+  Top = 0
+  Caption = 'Form1'
+  ClientHeight = 293
+  ClientWidth = 259
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnShow = FormShow
+  DesignerMasterStyle = 0
+  object lblMessage: TLabel
+    Align = MostTop
+    Size.Width = 259.000000000000000000
+    Size.Height = 57.000000000000000000
+    Size.PlatformDefault = False
+    TextSettings.HorzAlign = Center
+    Text = #191'Est'#225's seguro que deseas salir?'
+    TabOrder = 0
+  end
+  object btnYes: TButton
+    Align = MostTop
+    ModalResult = 8
+    Position.Y = 57.000000000000000000
+    Size.Width = 259.000000000000000000
+    Size.Height = 50.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 1
+    Text = 'Yes'
+    OnClick = Salir
+  end
+  object btnNo: TButton
+    Align = MostTop
+    ModalResult = 7
+    Position.Y = 107.000000000000000000
+    Size.Width = 259.000000000000000000
+    Size.Height = 50.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 2
+    Text = 'No'
+    OnClick = Salir
+  end
+  object tmrTimeOut: TTimer
+    Enabled = False
+    OnTimer = tmrTimeOutTimer
+    Left = 32
+    Top = 160
+  end
+end
